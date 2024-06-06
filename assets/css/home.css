@@ -1,0 +1,1630 @@
+
+.home {
+  margin-bottom: 70px;
+  margin-top: 45px;
+}
+
+.home .title {
+  padding-bottom: 16px;
+}
+
+.home .title h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-text);
+}
+
+.home .title a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.search{
+  padding: 15px;
+  margin: 50px 0 0 0;
+  position: relative;
+  z-index: 99;
+}
+
+  /*===========================================================
+  02: info CSS
+  =============================================================*/
+.info .image {
+  height: 40px;
+  width: 40px;
+}
+
+.info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.info p {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.info ul a,
+.info ul button {
+  height: 46px;
+  width: 46px;
+  border: 1px solid var(--additional2);
+}
+
+.info ul a span,
+.info ul button span {
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: var(--primary);
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  z-index: 10;
+}
+
+/*===========================================================
+03: service CSS
+=============================================================*/
+.service {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.serviceModal .modal-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 32px;
+  column-gap: 14px;
+  overflow-y: scroll;
+  max-height: 75vh;
+}
+
+.serviceModal .item .image,
+.service .item .image {
+  height: 64px;
+  width: 64px;
+  background: var(--secondary);
+}
+
+.serviceModal .item figcaption,
+.service .item figcaption {
+  margin-top: 11px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+/*===========================================================
+04: visited CSS
+=============================================================*/
+.visited .visited-pagination {
+  position: static;
+  text-align: right;
+}
+
+/*===========================================================
+05: budget CSS
+=============================================================*/
+.budget ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.budget .image {
+  width: 150px;
+  height: 100px;
+}
+
+.budget .content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.budget .content h5 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--secondary-text);
+  padding-top: 4px;
+  padding-bottom: 12px;
+}
+
+.budget .content .price,
+.budget .content .location {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.budget .content .price span {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+06: service-location CSS
+=============================================================*/
+.map {
+  height: 100vh;
+  width: 100%;
+}
+
+.locationModal {
+  backdrop-filter: blur(0);
+}
+
+.locationModal .modal-body {
+  display: block;
+  padding: 0 24px 24px 24px;
+  max-height: 270px;
+  overflow-y: auto;
+}
+
+.locationModal .modal-body .item-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.locationModal .item .image {
+  width: 92px;
+  height: 92px;
+}
+
+.locationModal .content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.locationModal .content .rating {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.locationModal .content .rating span {
+  color: var(--secondary-text);
+}
+
+.locationModal .content .location {
+  color: var(--gray-90);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.locationModal2 .modal-dialog {
+  margin: 24px;
+  max-width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 16px;
+  height: calc(100vh - 48px);
+}
+
+.locationModal2 .modal-body {
+  padding: 24px;
+}
+
+.locationModal2 .item .image {
+  width: 80px;
+  height: 100px;
+}
+
+.locationModal2 .btn-list a {
+  height: 50px;
+  width: 50px;
+  background: var(--secondary);
+}
+
+.locationModal2 .btn-list a.active {
+  background: var(--primary);
+}
+
+.locationModal2 .btn-list a.active img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(139deg) brightness(103%) contrast(101%);
+}
+
+/*===========================================================
+07: tour-guide CSS
+=============================================================*/
+.tour-guide .guide ul li:not(:last-child){
+  margin-bottom: 24px;
+}
+
+/*===========================================================
+08: dark-mode CSS
+=============================================================*/
+.dark-mode .info ul a img{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(322deg) brightness(102%) contrast(102%);
+}
+
+.dark-mode .info h3,
+.dark-mode .place-card .content h4,
+.dark-mode .home .title h2,
+.dark-mode .place-card .content .price h3,
+.dark-mode .guide .item .content h4,
+.dark-mode .budget .content h4,
+.dark-mode .locationModal .content h4,
+.dark-mode .budget .content .price span {
+  color: white;
+}
+
+.dark-mode .serviceModal .item .image,
+.dark-mode .service .item .image {
+  background: var(--gray-90);
+}
+
+.dark-mode .locationModal .content .location,
+.dark-mode .guide .item .content .location{
+  color: var(--secondary-text);
+}
+
+.dark-mode .locationModal .content .location img,
+.dark-mode .guide .item .content .location img{
+  filter: brightness(0) saturate(100%) invert(53%) sepia(9%) saturate(375%) hue-rotate(164deg) brightness(94%) contrast(92%);
+}
+
+
+.icon--footer{
+  display: block;
+  color: #747474;
+  text-align: center;
+}
+.icon--footer i{
+  display: block;
+  font-size: 19px;
+  margin: 0 0 5px 0;
+}
+.icon--footer span{
+  font-size: 14px;
+}
+
+.block-whatsapp{
+  display: flex;
+  background: #eee;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-align: center;
+  gap: 10px;
+  justify-content: normal;
+  align-items: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+.block-whatsapp i{
+  font-size: 24px;
+}
+
+.block-call{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.block-call i{
+  display: block;
+  font-size: 48px;
+
+}
+.block-call label{
+  display: block;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+
+}
+
+
+
+
+/*===========================================================
+01: border-box CSS
+=============================================================*/
+.border-box {
+  padding: 20px;
+  border: 1px solid var(--additional2);
+  border-radius: 12px;
+}
+
+.border-box h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--additional1);
+}
+
+.border-box ul li:not(:last-child) {
+  border-bottom: 1px solid var(--additional2);
+}
+
+/*===========================================================
+02: tour-guide-profile CSS
+=============================================================*/
+/* 2.1: page-title */
+.guide-profile .page-title {
+  position: absolute;
+  background: transparent;
+}
+
+.guide-profile .page-title .back-btn {
+  background: rgba(18, 18, 18, 0.08);
+}
+
+/* 2.2: section-title */
+.guide-profile .title h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+/* 2.3: profile-info */
+.profile-info {
+  margin-top: -50px;
+  position: relative;
+  z-index: 5;
+}
+
+.profile-info .image {
+  height: 100px;
+  width: 100px;
+}
+
+.profile-info h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-text);
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-70);
+  margin-bottom: 16px;
+}
+
+.profile-info p span {
+  color: var(--primary-text);
+}
+
+.profile-info a {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 32px;
+  text-align: center;
+}
+
+.profile-info .call-btn {
+  background: var(--gray-30);
+  color: var(--primary-text);
+}
+
+.profile-info .msg-btn {
+  width: 100%;
+  color: white;
+  background: var(--primary);
+}
+
+/* 2.4: summary */
+.summary p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-60);
+  padding-bottom: 5px;
+}
+
+.summary h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.summary h5 span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-60);
+}
+
+.summary .divider {
+  height: 28px;
+  width: 1px;
+  background: var(--gray-40);
+}
+
+/* 2.5: profile-about */
+.profile-about p {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--gray-70);
+}
+
+.profile-location .map {
+  width: 100%;
+  height: 156px;
+}
+
+.profile-location iframe {
+  width: 100%;
+  height: 156px;
+}
+
+/*===========================================================
+03: custom-check-container CSS
+=============================================================*/
+.custom-check-container {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  background: white;
+  color: var(--primary-text);
+}
+
+.custom-check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-check-container .checkmark {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--gray-30);
+}
+
+.custom-check-container input:checked~.checkmark {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.custom-check-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  background: url('https://devsaidul.com/tm2/html/preview/assets/svg/check-white.svg') no-repeat center;
+  background-size: contain;
+}
+
+.custom-check-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/*===========================================================
+04: user-profile CSS
+=============================================================*/
+.user-profile {
+  padding: 24px 24px 70px 24px;
+}
+
+.user-profile-heading .image {
+  height: 56px;
+  width: 56px;
+}
+
+.user-profile-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.user-profile-heading p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-70);
+}
+
+/*===========================================================
+05: user-personal CSS
+=============================================================*/
+.user-personal h4 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.user-personal ul li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.user-personal ul li p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.user-personal ul li small {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-text);
+  opacity: 0.5;
+}
+
+/*===========================================================
+06: user-info CSS
+=============================================================*/
+.profile-image .image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.profile-image .image button {
+  height: 32px;
+  width: 32px;
+  background: var(--primary);
+  border: 3px solid white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.user-info .input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.user-info .dob,
+.user-info .input {
+  width: 100%;
+  border-radius: 24px;
+  height: 50px;
+  border: 1px solid var(--primary);
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+  background: transparent;
+}
+
+.user-info .input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.user-info textarea.input {
+  padding: 16px;
+  height: 132px;
+}
+
+.user-info .dob .input {
+  border: 0;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.user-info .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.user-info .gender-container {
+  padding: 12px 16px 12px 56px;
+  color: var(--primary-text);
+  border: 1px solid var(--primary);
+  border-radius: 24px;
+}
+
+.user-info .checkmark {
+  top: 12px;
+  left: 16px;
+}
+
+/*===========================================================
+07: editImage Modal CSS
+=============================================================*/
+.editImageModal .modal-header {
+  padding: 32px 20px 20px 20px;
+}
+
+.editImageModal .modal-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.editImageModal .action-btn {
+  width: 100%;
+  padding: 18px 16px;
+  background: #F5F5F5;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.editImageModal .action-btn.delete {
+  color: var(--alert);
+}
+
+.editImageModal #choose-file {
+  opacity: 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.editImageModal ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*===========================================================
+08: profile-main CSS
+=============================================================*/
+.profile-main {
+  padding-bottom: 116px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.profile-main .bottom-btn {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+/*===========================================================
+09: user-address CSS
+=============================================================*/
+.user-address .plus-btn {
+  height: 48px;
+  width: 48px;
+}
+
+.user-address .address-container .text {
+  max-width: calc(100% - 40px);
+}
+
+.user-address .checkmark {
+  top: 0;
+  right: 0;
+}
+
+.user-address .address-container .address-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.user-address .address-container .address-card-phn {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--secondary-text);
+}
+
+.user-address .change-add {
+  display: inline-block;
+  padding: 4px 16px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+/*===========================================================
+08: add-address CSS
+=============================================================*/
+.add-address label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.add-address .input-field {
+  border-radius: 24px;
+}
+
+.add-address textarea.input-field {
+  padding: 16px;
+  height: 132px;
+}
+
+.add-address select {
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--gray-60) !important;
+}
+
+.add-address select option {
+  color: var(--primary-text);
+}
+
+.add-address .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  z-index: 10;
+}
+
+/*===========================================================
+11: user-payment CSS
+=============================================================*/
+.user-payment .page-title a {
+  height: 48px;
+  width: 48px;
+  border: 1px solid #F2F2F2;
+}
+
+.user-payment .payment-container .icon {
+  height: 48px;
+  width: 48px;
+  border: 1px solid #F2F2F2;
+}
+
+.user-payment .checkmark {
+  top: 16px;
+  right: 0;
+}
+
+.user-payment .payment-container .text {
+  border-bottom: 1px solid var(--additional2);
+}
+
+.user-payment .payment-container .payment-method-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.user-payment .payment-container .payment-method-card-num {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-text);
+}
+
+/*===========================================================
+12: add-card CSS
+=============================================================*/
+.add-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.add-card .input-field {
+  border-radius: 24px;
+}
+
+.add-card .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/*===========================================================
+13: change-password CSS
+=============================================================*/
+.change-password h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.change-password ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.change-password ul p {
+  color: var(--success);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.change-password label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.change-password .eye-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+}
+
+.change-password .input-psswd {
+  padding-right: 48px;
+  border-radius: 24px;
+}
+
+/*===========================================================
+14: forgot-password CSS
+=============================================================*/
+.forgot-password blockquote {
+  background: #F5F5F5;
+}
+
+.forgot-password blockquote p {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+15: forgot-password CSS
+=============================================================*/
+.terms-policies h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.terms-policies p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional1);
+  opacity: 0.5;
+}
+
+/*===========================================================
+16: user-language CSS
+=============================================================*/
+
+.suggested ul li {
+  padding: 16px 0;
+}
+
+.suggested .language-container {
+  padding-left: 12px;
+}
+
+.suggested .language-container .checkmark {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+/*===========================================================
+17: msg-notifications CSS
+=============================================================*/
+.msg-notifications ul li {
+  padding: 24px 0;
+}
+
+.msg-notifications ul li:last-child {
+  padding-bottom: 0;
+}
+
+.msg-notifications ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+18: help-support CSS
+=============================================================*/
+.help-main .help-search .input-field{
+  padding: 0;
+}
+
+.faq .accordion-item {
+  border: 0;
+  border-bottom: 1px solid var(--gray-30);
+}
+
+.faq .accordion-button {
+  padding: 24px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.faq .accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: var(--primary-text);
+  background-color: white;
+  box-shadow: none;
+}
+
+.faq .accordion-body {
+  padding: 0;
+  padding-bottom: 24px;
+}
+
+.faq .accordion-body p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional1);
+}
+
+.faq .accordion-button::after {
+  background-image: url('https://devsaidul.com/tm2/html/preview/assets/svg/arrow-bottom.svg');
+  background-size: cover;
+}
+
+.faq .accordion-item:last-of-type .accordion-button.collapsed{
+  border-radius: 0;
+}
+
+/*===========================================================
+19: log Out Modal CSS
+=============================================================*/
+.logOutModal .close-btn {
+  height: 32px;
+  width: 32px;
+  background: var(--secondary);
+}
+
+.logOutModal .modal-header {
+  padding: 16px;
+  border: 0;
+}
+
+.logOutModal .modal-body h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.logOutModal .modal-body ul button {
+  width: 180px;
+  padding: 12px 0;
+  border-radius: 20px;
+  background: var(--primary);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.logOutModal .modal-body .log-out {
+  background: transparent;
+  color: var(--alert);
+}
+
+/*===========================================================
+20: dark-mode CSS
+=============================================================*/
+.dark-mode .profile-info h3,
+.dark-mode .guide-profile .title h4,
+.dark-mode .user-profile-heading h3,
+.dark-mode .user-personal h4,
+.dark-mode .user-personal ul li p,
+.dark-mode .user-personal ul li small,
+.dark-mode .user-info .dob,
+.dark-mode .user-info .input,
+.dark-mode .editImageModal .modal-header h1,
+.dark-mode .user-address .address-container .address-card-title,
+.dark-mode .user-payment .payment-container .payment-method-card-title,
+.dark-mode .add-card label,
+.dark-mode .change-password h4,
+.dark-mode .forgot-password blockquote p,
+.dark-mode .terms-policies h3,
+.dark-mode .msg-notifications ul li p,
+.dark-mode .custom-check-container,
+.dark-mode .faq .accordion-button,
+.dark-mode .logOutModal .modal-body h4 {
+  color: white;
+}
+
+.dark-mode .setting-list img,
+.dark-mode .user-profile-heading .edit-info img,
+.dark-mode .editImageModal li:not(:last-child) .action-btn img,
+.dark-mode .add-address img,
+.dark-mode .user-payment .page-title a img,
+.dark-mode .logOutModal .close-btn img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(322deg) brightness(102%) contrast(102%);
+}
+
+.dark-mode .user-info .input::placeholder,
+.dark-mode .terms-policies p,
+.dark-mode .border-box h5,
+.dark-mode .faq .accordion-body p {
+  color: var(--gray-30);
+}
+
+.dark-mode .user-info .gender-container {
+  background: var(--gray-80);
+  color: white;
+  caret-color: white;
+}
+
+.dark-mode .logOutModal .close-btn,
+.dark-mode .editImageModal .action-btn,
+.dark-mode .forgot-password blockquote {
+  background: var(--gray-80);
+  color: white;
+}
+
+.dark-mode .editImageModal .action-btn.delete{
+  color: var(--alert);
+}
+
+.dark-mode .editImageModal .modal-header {
+  border-color: var(--gray-90);
+}
+
+.dark-mode .faq .accordion-item,
+.dark-mode .faq .accordion-button,
+.dark-mode .custom-check-container{
+  background: var(--gray-100);
+}
+
+.dark-mode .faq .accordion-button::after {
+  background-image: url(https://devsaidul.com/tm2/html/preview/assets/svg/arrow-bottom-white.svg);
+}
+
+.banner--home{
+  display: block;
+  height: 300px;
+  margin: -80px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner--home p{
+  position: absolute;
+  bottom: 50px;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0 30px;
+  font-size: 17px;
+}
+
+.banner--home:before{
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(to bottom, #ffffff00, #000000);
+  height: 180px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.banner--home img{
+  width: 100%;
+  min-height: 100%;
+}
+
+swiper-container {
+  width: 100%;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.block--slider--des{
+
+}
+.block--slider--des img{
+  height: 200px;
+  border-radius: 15px;
+}
+.block--slider--des h3 a{
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    color:#000;
+}
+
+.dark-mode .block--slider--des h3 a,
+.dark-mode .title--home p{
+  color:#fff;
+}
+
+.dark-mode .home .title.title--home{
+  background: var(--gray-100) !important;
+}
+
+.dark-mode .bg-light{
+  background: var(--gray-90) !important;
+}
+
+.title--home{
+  padding: 20px 30px 0 30px;
+  margin: 0 0 0 0;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background: #fff;
+  top: -40px;
+}
+
+.title--home p{
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+
+.pos-swiper{
+  top: -30px;
+}
+
+.image-nile img{
+  height: 120px;
+}
+
+
+/*===========================================================
+01: ticket-booked CSS
+=============================================================*/
+.ticket .page-title {
+  display: block;
+}
+
+.ticket-tab {
+  padding: 0 24px 70px 24px;
+}
+
+.ticket-tab .nav {
+  margin-bottom: 31px;
+}
+
+.ticket-tab .nav,
+.ticket-tab .nav-tabs {
+  border: 0;
+  padding: 0;
+  justify-content: center;
+  gap: 15px;
+}
+
+.ticket-tab .nav-tabs .nav-item {
+  width: calc(50% - 8px);
+}
+
+.ticket-tab .nav-tabs .nav-link {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--prmary-text);
+  border-radius: 32px;
+}
+
+.ticket-tab .nav-tabs .nav-link.active {
+  color: white;
+  background: var(--primary);
+}
+
+/* 1.1: ticket-card */
+.ticket-card {
+  background: white;
+  padding: 20px 16px;
+  box-shadow: 0 10px 60px 0 rgba(117, 117, 117, 0.15);
+  margin-bottom: 15px;
+}
+
+.ticket-card .card-title p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.ticket-card .card-title span {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 16px;
+  border-radius: 50px;
+  background: #FFF2ED;
+  color: var(--additional5);
+}
+
+.ticket-card.history .card-title span {
+  color: var(--success);
+  background: #E6F9F0;
+}
+
+.ticket-card .card-item {
+  margin: 0 0 10px  0;
+}
+
+.ticket-card .card-item .image {
+  width: 91px;
+  height: 82px;
+}
+
+.ticket-card .content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.ticket-card .content .rating {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.ticket-card .content .rating span {
+  color: var(--secondary-text);
+}
+
+.ticket-card .content .location {
+  color: var(--gray-90);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ticket-card .card-footer p {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.ticket-card .card-footer h3 {
+  font-size: 18px;
+  color: var(--primary-text);
+  font-weight: 700;
+}
+
+.ticket-card .card-footer a,
+.ticket-card .card-footer button {
+  display: inline-block;
+  padding: 8px 40px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid var(--primary);
+  text-align: center;
+}
+
+.ticket-card.history .card-footer a {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ticket-card.history .card-footer .rating {
+  color: white;
+  background: var(--primary);
+}
+
+/* 1.2: review Modal */
+.reviewModal .modal-body ul li.on .star-yellow {
+  display: block;
+}
+
+.reviewModal .modal-body ul li .star-yellow,
+.reviewModal .modal-body ul li.on .star-gray {
+  display: none;
+}
+
+.reviewModal .modal-body .msg {
+  margin-top: 32px;
+  margin-bottom: 56px;
+}
+
+.reviewModal .modal-body h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+  margin-bottom: 8px;
+}
+
+.reviewModal .modal-body textarea {
+  display: block;
+  width: 100%;
+  height: 132px;
+  border-radius: 24px;
+  border: 1px solid var(--primary);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text);
+  outline: none;
+}
+
+.reviewModal .modal-body textarea::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+/*===========================================================
+02: ticket-detail CSS
+=============================================================*/
+.ticket-detail .details-body {
+  padding: 0 24px 32px 24px;
+}
+
+/* 2.1: section-title */
+.ticket-detail .title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.ticket-detail .sub-title h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.ticket-detail .border-b {
+  border-bottom: 1px solid var(--additional2);
+}
+
+.ticket-detail .border-t {
+  border-top: 1px solid var(--additional2);
+}
+
+/* 2.2: invoice number */
+.invoice-number p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.invoice-number span {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 16px;
+  border-radius: 50px;
+  background: #FFF2ED;
+  color: var(--additional5);
+}
+
+/* 2.3: order-item */
+.order-card .item .image {
+  width: 107px;
+  height: 82px;
+}
+
+.order-card .content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.order-card .content .rating {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.order-card .content .rating span {
+  color: var(--secondary-text);
+}
+
+.order-card .content .location {
+  color: var(--gray-90);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 2.4: customer info */
+.customer-info ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.customer-info ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.customer-info ul li p:last-child {
+  color: var(--primary-text);
+}
+
+.customer-info ul li p.success {
+  color: var(--success);
+}
+
+/* 2.5: price */
+.price p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.price p span {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.promo-price p span {
+  color: var(--alert);
+}
+
+/*===========================================================
+03: dark-mode CSS
+=============================================================*/
+.dark-mode .ticket-tab .nav-tabs .nav-link,
+.dark-mode .ticket-card .content h4,
+.dark-mode .ticket-card .card-footer h3,
+.dark-mode .ticket-card .card-footer a,
+.dark-mode .ticket-card .card-footer button,
+.dark-mode .invoice-number p,
+.dark-mode .order-card .content h4,
+.dark-mode .ticket-detail .title h4,
+.dark-mode .customer-info ul li p:last-child,
+.dark-mode .price p span {
+  color: white;
+}
+
+.dark-mode .ticket-card {
+  background: var(--gray-90);
+}
+
+.dark-mode .ticket-card .card-title p,
+.dark-mode .ticket-card .content .location,
+.dark-mode .ticket-card .content .rating span,
+.dark-mode .ticket-card .card-footer p,
+.dark-mode .reviewModal .modal-body textarea::placeholder {
+  color: var(--gray-40);
+}
+
+.dark-mode .ticket-card .content .location img {
+  filter: brightness(0) saturate(100%) invert(94%) sepia(7%) saturate(191%) hue-rotate(162deg) brightness(91%) contrast(94%);
+}
+
+.dark-mode .order-card .content .location {
+  color: var(--secondary-text);
+}
+
+.dark-mode .promo-price p span {
+  color: var(--alert);
+}
+
+.dark-mode .reviewModal .modal-body textarea{
+  background: var(--gray-80);
+  color: white;
+}
+
+
+
+/********* gategory *********/
+.sec--cat swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sec--cat swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  .sec--cat swiper-slide:first-child {
+    transition: transform 100ms;
+  }
+
+  .sec--cat swiper-slide:first-child img {
+    transition: box-shadow 500ms;
+  }
+
+  .sec--cat swiper-slide.swiper-slide-active:first-child {
+    transform: translateX(50%);
+    z-index: 2;
+  }
+
+  .sec--cat swiper-slide.swiper-slide-active:first-child img {
+    box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+  }
+
+  .sec--cat swiper-slide:nth-child(2) {
+    transition: transform 100ms;
+  }
+
+  .sec--cat swiper-slide.swiper-slide-next:nth-child(2) {
+    transform: translateX(55%);
+    z-index: 1;
+  }
+
+  .sec--cat swiper-container[dir="rtl"] swiper-slide.swiper-slide-active:first-child {
+    transform: translateX(-50%);
+  }
+
+  .sec--cat swiper-container[dir="rtl"] swiper-slide.swiper-slide-next:nth-child(2) {
+    transform: translateX(-55%);
+  }
+}
+
+.sec--cat{
+
+}
+.sec--cat img{
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+.sec--cat h3 a{
+  font-size: 17px;
+  color: #000;
+  margin: 20px 0;
+  display: block;
+}
+
+
+.boc-home-sec{
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.boc-home-sec img{
+  height:130px;
+}
+
+.block--blog{
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  margin: 0 0 15px 0;
+}
+.block--blog img{
+  width: 35%;
+  height: 75px;
+  border-radius: 10px;
+}
+.block--blog h3 a{
+  font-size: 17px;
+  color:#000;
+}
+
+.partner-section swiper-slide{
+  height: 120px;
+}
+
+.partner-section .img--sec--oar{
+  height: 75px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.partner-section .img--sec--oar img{
+
+}
+
+.dark-mode .home .title p,
+.dark-mode .block--blog h3 a,
+.dark-mode .block-call{
+  color: #ddd;
+}

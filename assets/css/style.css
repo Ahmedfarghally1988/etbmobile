@@ -115,8 +115,8 @@
 }
 
 .budget .image {
-  width: 150px;
-  height: 100px;
+  width: 86px;
+  height: 86px;
 }
 
 .budget .content h4 {
@@ -1627,4 +1627,90 @@ swiper-slide img {
 .dark-mode .block--blog h3 a,
 .dark-mode .block-call{
   color: #ddd;
+}
+
+.main-title-page{
+  font-size: 14px;
+}
+.show-more-height {
+  height: 36px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 5px 0 0 0;
+}
+
+.title--more{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.show-more {
+  text-align: center;
+  margin: 5px auto;
+  color: #007a87;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.div-decs-footer{
+
+}
+.div-decs-footer h4{
+  font-size: 19px;
+  margin: 0 0 10px 0;
+}
+.div-decs-footer p{
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.input-sort{
+  width: 40%;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 0 0 0;
+  height: 40px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.nu--sort{
+  font-size: 14px;
+}
+
+.budget .content h4.name--tour{
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.btn-load-more{
+  display: inline-block;
+  padding: 8px 40px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid var(--primary);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.list--cat{
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.list--cat ul li a{
+  color: #000;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.dark-mode .title-header,
+.dark-mode .nu--sort,
+.dark-mode .list--cat ul li a{
+  color: #fff;
 }

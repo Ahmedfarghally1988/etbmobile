@@ -68,16 +68,20 @@
         <h3 class="main-title main-title-page">Egypt Tour Packages</h3>
 
         <div class="btn-grp d-flex align-items-center gap-16">
+          <a href="#" class="icon--footer" data-bs-toggle="modal" data-bs-target="#userLanguage">
+            <i class="fa-solid fa-globe mt-1"></i>
+          </a>
           <label for="mode-change" class="mode-change d-flex align-items-center justify-content-center">
             <input type="checkbox" id="mode-change">
-            <img src="assets/images/sun-white.svg" alt="icon" class="sun">
-            <img src="assets/images/moon-white.svg" alt="icon" class="moon">
+            <i class="fa-regular fa-sun sun"></i>
+            <i class="fa-solid fa-moon moon"></i>
           </label>
           <button class="toggle-btn">
-            <img src="assets/images/burger-white.svg" alt="" class="icon">
+            <i class="fa-solid fa-bars"></i>
           </button>
 
         </div>
+
       </div>
       <div class="m-menu__overlay"></div>
       <!-- main menu -->
@@ -857,40 +861,42 @@
   </main>
 
 
-  <footer class="bottom-nav">
-    <ul class="d-flex align-items-center justify-content-around w-100 h-100">
+   <footer class="bottom-nav">
+    <ul class="d-flex align-items-center justify-content-around w-100 h-100 gap-3">
       <li>
         <a href="#" class="icon--footer">
-          <i class="fa-solid fa-house-chimney"></i>
+          <i class="fa-solid fa-house-chimney" style="color: #000;"></i>
           <span> Home </span>
         </a>
       </li>
       <li>
         <a href="#" class="icon--footer" data-bs-toggle="modal" data-bs-target="#whatsApp">
-          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-square-whatsapp fa-beat" style="color: #35c700;font-size: 24px;margin-bottom: 0"></i>
           <span> Whatsapp </span>
         </a>
       </li>
       <li>
         <a href="#" class="icon--footer" data-bs-toggle="modal" data-bs-target="#callPhone">
-          <i class="fa-solid fa-headphones"></i>
+          <i class="fa-solid fa-phone-volume" style="color: #005a9e;"></i>
           <span> Phone </span>
         </a>
       </li>
       <li>
-        <a href="#" class="icon--footer" data-bs-toggle="modal" data-bs-target="#Inquire">
-          <i class="fa-solid fa-bell-concierge"></i>
-          <span> Inquire </span>
+        <a href="#" class="icon--footer">
+          <i class="fa-solid fa-envelope-open-text" style="color: #ff0000;"></i>
+          <span> E-Mail </span>
         </a>
       </li>
       <li>
-        <a href="#" class="icon--footer" data-bs-toggle="modal" data-bs-target="#userLanguage">
-          <i class="fa-solid fa-gear"></i>
-          <span> Setting </span>
+        <a href="#" class="icon--footer" data-bs-toggle="modal" data-bs-target="#Inquire">
+          <i class="fa-regular fa-comment-dots fa-beat" style="color: #c8a528;"></i>
+          <span> Inquire </span>
         </a>
       </li>
+
     </ul>
   </footer>
+
   <!-- filter modal start -->
   <div class="modal fade filterModal bottomModal" id="filterModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
@@ -1042,49 +1048,49 @@
           <h1 class="modal-title">Inquire Form</h1>
         </div>
         <div class="modal-body d-block">
-            <div class="filds-inquire">
-              <form>
+          <div class="filds-inquire">
+            <form>
 
-                <div class="mt-16">
-                  <input type="text" placeholder="Name" class="input-field" />
-                </div>
+              <div class="mt-16">
+                <input type="text" placeholder="Name" class="input-field" />
+              </div>
 
-                <div class="mt-16">
-                  <input type="email" placeholder="email" class="input-field" />
-                </div>
+              <div class="mt-16">
+                <input type="email" placeholder="email" class="input-field" />
+              </div>
 
-                <div class="mt-16">
-                  <input type="tel" placeholder="phone" class="input-field" />
-                </div>
+              <div class="mt-16">
+                <input type="tel" placeholder="phone" class="input-field" />
+              </div>
 
-                <div class="mt-16">
-                  <select class="input-field">
-                      <option> Egypt </option>
-                      <option> Egypt </option>
-                      <option> Egypt </option>
-                      <option> Egypt </option>
-                  </select>
-                </div>
+              <div class="mt-16">
+                <select class="input-field">
+                  <option> Egypt </option>
+                  <option> Egypt </option>
+                  <option> Egypt </option>
+                  <option> Egypt </option>
+                </select>
+              </div>
 
-                <div class="mt-16 d-flex justify-content-between gap-4">
-                  <input type="number" placeholder="adults" class="input-field" />
-                  <input type="number" placeholder="children" class="input-field" />
-                </div>
+              <div class="mt-16 d-flex justify-content-between gap-4">
+                <input type="number" placeholder="adults" class="input-field" />
+                <input type="number" placeholder="children" class="input-field" />
+              </div>
 
-                <div class="mt-16">
-                  <input type="date" placeholder="phone" class="input-field" />
-                </div>
+              <div class="mt-16">
+                <input type="date" placeholder="phone" class="input-field" />
+              </div>
 
-                <div class="mt-16">
-                  <textarea rows="3" placeholder="notes" class="input-field"></textarea>
-                </div>
+              <div class="mt-16">
+                <textarea rows="3" placeholder="notes" class="input-field"></textarea>
+              </div>
 
-                <div class="pay-btn mt-0">
-                  <a href="#" class="btn-primary">Send Now</a>
-                </div>
+              <div class="pay-btn mt-0">
+                <a href="#" class="btn-primary">Send Now</a>
+              </div>
 
-              </form>
-            </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -1113,96 +1119,31 @@
                   <label for="l-1" class="custom-check-container language-container">
                     <input type="radio" name="user-lang" id="l-1" checked>
                     <span class="checkmark"></span>
-                    English
+                    <img src="assets/images/united-kingdom.png" alt="" title=""> English
                   </label>
                 </li>
                 <li>
                   <label for="l-2" class="custom-check-container language-container">
                     <input type="radio" name="user-lang" id="l-2">
                     <span class="checkmark"></span>
-                    Spanish
+                    <img src="assets/images/united-kingdom.png" alt="" title=""> Spanish
                   </label>
                 </li>
                 <li>
                   <label for="l-3" class="custom-check-container language-container">
                     <input type="radio" name="user-lang" id="l-3">
                     <span class="checkmark"></span>
-                    Chinese
+                    <img src="assets/images/united-kingdom.png" alt="" title=""> Chinese
                   </label>
                 </li>
                 <li>
                   <label for="l-4" class="custom-check-container language-container">
                     <input type="radio" name="user-lang" id="l-4">
                     <span class="checkmark"></span>
-                    French
-                  </label>
-                </li>
-                <li>
-                  <label for="l-5" class="custom-check-container language-container">
-                    <input type="radio" name="user-lang" id="l-5">
-                    <span class="checkmark"></span>
-                    Portuguese
-                  </label>
-                </li>
-                <li>
-                  <label for="l-6" class="custom-check-container language-container">
-                    <input type="radio" name="user-lang" id="l-6">
-                    <span class="checkmark"></span>
-                    Italian
-                  </label>
-                </li>
-                <li>
-                  <label for="l-7" class="custom-check-container language-container">
-                    <input type="radio" name="user-lang" id="l-7">
-                    <span class="checkmark"></span>
-                    Russian
-                  </label>
-                </li>
-                <li>
-                  <label for="l-8" class="custom-check-container language-container">
-                    <input type="radio" name="user-lang" id="l-8">
-                    <span class="checkmark"></span>
-                    German
+                    <img src="assets/images/united-kingdom.png" alt="" title=""> French
                   </label>
                 </li>
               </ul>
-            </div>
-            <div class="border-box mb-2">
-                <h5>Suggested Currency</h5>
-              <ul>
-                <li>
-                  <label for="l-9" class="custom-check-container language-container">
-                    <input type="radio" name="user-curr" id="l-9" checked>
-                    <span class="checkmark"></span>
-                    English
-                  </label>
-                </li>
-                <li>
-                  <label for="l-10" class="custom-check-container language-container">
-                    <input type="radio" name="user-curr" id="l-10">
-                    <span class="checkmark"></span>
-                    Spanish
-                  </label>
-                </li>
-                <li>
-                  <label for="l-11" class="custom-check-container language-container">
-                    <input type="radio" name="user-curr" id="l-11">
-                    <span class="checkmark"></span>
-                    Chinese
-                  </label>
-                </li>
-                <li>
-                  <label for="l-12" class="custom-check-container language-container">
-                    <input type="radio" name="user-curr" id="l-12">
-                    <span class="checkmark"></span>
-                    French
-                  </label>
-                </li>
-              </ul>
-            </div>
-
-            <div class="pay-btn mt-0">
-              <a href="#" class="btn-primary">Submit</a>
             </div>
 
           </section>
